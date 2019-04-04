@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+
+import styled from '@emotion/styled'
+import { ThemeProvider } from 'emotion-theming'
 
 class App extends Component {
   render() {
@@ -21,8 +23,8 @@ class App extends Component {
           </a>
         </header>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
