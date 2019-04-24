@@ -2,7 +2,7 @@ import { css } from '@emotion/core'
 
 import { Theme } from '../settings'
 
-export const Elements = css`
+export const Base = css`
   body {
     font-family: PT Sans;
     font-size: 1rem;
