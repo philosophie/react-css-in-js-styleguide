@@ -1,28 +1,16 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
-
-import styled from '@emotion/styled'
+import { Global } from '@emotion/core'
 import { ThemeProvider } from 'emotion-theming'
+
+import Theme from './styles/settings/theme'
+import { GlobalStyles } from './styles/elements/base'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+      hello
+      </>
     )
   }
 }
