@@ -12,6 +12,7 @@ export const Theme = {
     brandPrimary: '#e22d60',
     brandSecondary: '#2dbbe2',
     darkGray: '#3a3c48',
+    black: '#212529',
     white: '#FFFFFF',
   },
 }

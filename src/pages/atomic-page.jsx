@@ -4,6 +4,7 @@ import { Box, Flex } from '@rebass/emotion'
 
 import { Button, AccentButton } from '../atoms/button'
 import { Input } from '../atoms/input'
+import { Paragraph, H2, H4 } from '../atoms/text'
 import { Container } from '../atoms/container'
 import { EmailSignup } from '../molecules/email-signup'
 import { SignupSection } from '../organisms/signup-section'
@@ -17,7 +18,7 @@ const AtomicPageSection = styled.main`
   }
 `
 
-const AtomicPageParagraph = styled.p`
+const AtomicPageParagraph = styled(Paragraph)`
   max-width: 690px;
 `
 
@@ -26,8 +27,8 @@ export function AtomicPage(props) {
     <main className="atomic-page">
       <AtomicPageSection>
         <Container>
-          <h2>Page</h2>
-          <AtomicPageParagraph>
+          <H2>Page</H2>
+          <AtomicPageParagraph largeText>
             This "Page" illustrates how elements breakdown in the Atomic system.
             Atoms make up molecules, molecules make up organisms, and organisms
             are used on pages and templates.{' '}
@@ -42,16 +43,16 @@ export function AtomicPage(props) {
       {/* Using atoms */}
       <AtomicPageSection className="atomic-page__section--atoms">
         <Container>
-          <h2>Atoms</h2>
+          <H2>Atoms</H2>
 
           <Flex flexWrap="wrap">
             <Box width={[1, 1, 1 / 2, 1 / 2]} pr={5}>
-              <h5>Input Field</h5>
+              <H4>Input Field</H4>
               <Input placeholder={'atom@gmail.com'} />
             </Box>
 
             <Box width={[1, 1, 1 / 2, 1 / 2]}>
-              <h5>Button</h5>
+              <H4>Button</H4>
               <Button title={'Atom'} className="button" />
               <AccentButton title={'Atom Accent'} />
             </Box>
@@ -62,11 +63,11 @@ export function AtomicPage(props) {
       {/* Using a molecule */}
       <AtomicPageSection>
         <Container>
-          <h2>Molecules</h2>
+          <H2>Molecules</H2>
 
           <Flex>
             <Box>
-              <h5>Email signup</h5>
+              <H4>Email signup</H4>
               <EmailSignup
                 placeholder={'molecule@gmail.com'}
                 title={'Molecule'}
@@ -80,8 +81,8 @@ export function AtomicPage(props) {
       <AtomicPageSection>
         <Container>
           <Box>
-            <h2>Organisms</h2>
-            <h5>Signup Section</h5>
+            <H2>Organisms</H2>
+            <H4>Signup Section</H4>
           </Box>
 
           <SignupSection

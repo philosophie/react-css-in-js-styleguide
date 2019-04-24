@@ -9,20 +9,5 @@ export const Container = styled(Box)`
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-
-  ${Mq.sm} {
-    max-width: 540px;
-  }
-
-  ${Mq.md} {
-    max-width: 720px;
-  }
-
-  ${Mq.lg} {
-    max-width: 960px;
-  }
-
-  ${Mq.xl} {
-    max-width: 1140px;
-  }
+  max-width: 1140px;
 `
